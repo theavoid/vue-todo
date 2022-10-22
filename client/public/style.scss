@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .search input {
+        padding: 0.5rem 1rem;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        width: 300px;
+        font-size: 1rem;
+        &:hover {
+            border: 1px solid #ccc;
+        }
+        &:focus {
+            border: 1px solid #ccc;
+        }
+    }
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #000;
+        a {
+            color: rgb(51, 122, 255);
+        }
+    }
+    .actions {
+       a {
+        border: 1px solid rgb(51, 122, 255);
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        color: rgb(51, 122, 255);
+        font-size: 1rem;
+        margin-left: 1rem;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: rgb(51, 122, 255);
+            color: #fff;
+        }
+       }
+    }
+}
+
+.cards {
+    margin: 2em auto;
+    max-width: 800px;
+    .card {
+        border: 1px solid #e5e5e5;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        position: relative;
+        .card-author {
+            font-size: 0.8rem;
+            color: #999;
+            position: absolute;
+            left: 10px;
+            bottom: 10px
+        }
+        .card-header {
+            font-size: 1.5rem;
+            color:rgb(72, 99, 255);
+            margin-bottom: 10px;
+        }
+        .card-body {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 2em;
+        }
+        .card-footer {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            button {
+                border:none;
+                border-radius: 5px;
+                color: rgb(51, 122, 255);
+                font-size: 1rem;
+                margin-left: 1rem;
+                transition: all 0.3s ease;
+                background-color: #ffff;
+                cursor: pointer;
+            }
+            .danger {
+                color: rgb(255, 24, 24);
+            }
+        }
+    }
+}
+
+.app-form {
+    margin: 2em auto;
+    max-width: 800px;
+    .form-group {
+        margin-bottom: 1rem;
+        label {
+            display: block;
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        input, textarea {
+            padding: 0.5rem 1rem;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 1rem;
+            &:hover {
+                border: 1px solid #ccc;
+            }
+            &:focus {
+                border: 1px solid #ccc;
+            }
+        }
+        textarea {
+            min-height: 200px;
+        }
+    }
+    button {
+        background-color: rgb(51, 122, 255);
+        border: none;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(72, 99, 255);
+        }
+    }
+
+}
