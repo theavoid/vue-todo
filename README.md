@@ -1,2 +1,2 @@
-# vue-todo
+# VueJS Todo App
 Todo app with VueJS
