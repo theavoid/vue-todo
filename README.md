@@ -1,2 +1,2 @@
 # VueJS Todo App
-Todo app with VueJS
+Todo app with VueJS and Express.
